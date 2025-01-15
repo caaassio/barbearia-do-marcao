@@ -1,0 +1,119 @@
+/* Estilo geral da seção */
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+
+}
+
+.line {
+    width: 70px;
+    height: 3px; 
+    background-color:#FFA954;
+    margin: 0 auto;
+}
+
+.photo-header{
+    border: 1px solid blue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.photo-header h2{
+    color: orange;
+    margin: 5px 0 15px;
+}
+
+.photo-header span{
+    font-weight: 600;
+}
+
+.photo-header .line{
+    margin-bottom: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ff0000;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    width: 97%;
+    
+}
+
+.carousel-item {
+    min-width: calc(100% / 3); 
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.mask{
+    width: 345px;
+    height: 345px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.carousel-item img{
+    width: auto; 
+    height: 100%; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color:tomato;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/*Navegação*/
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    background-color: #ff000000;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.carousel-btn.prev {
+    left: -7px;
+    z-index: 10; 
+}
+
+.carousel-btn.next {
+    right: -6px;
+}
+
+.carousel-btn:hover {
+    color: rgb(255, 136, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
