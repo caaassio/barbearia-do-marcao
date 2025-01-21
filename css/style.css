@@ -2,120 +2,125 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-.h-h{
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-        url('/img/header.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-color: #2A282D;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    width: 100%; 
-}
-
-.header {
-    padding: 10px 20px;
-    justify-content: center;
-    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: hidden;  
     width: 100%;
+    
 }
 
-.conteudo-header{
-    display: flex;
-    width: 1180px;
-    justify-content: space-between;  
-    align-items: center; 
-}
+    .container {
+        margin: 0 auto;
+    }
 
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    display: flex; 
-    align-items: center; 
-}
+    .h-h{
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+            url('/img/header.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-color: #2A282D;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
 
-nav ul li{
-    float: left;
-    margin-left: 20px;
-}
+    .header {
+        padding: 10px 20px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
 
-.logo img {
-    display: block;
-    float: left;
-}
+    .conteudo-header{
+        display: flex;
+        width: 1180px;
+        justify-content: space-between;  
+        align-items: center; 
+        flex-wrap: wrap; 
+    }
 
-.info {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    color: white;
-    font-size: 16px;
-    white-space: nowrap;
-}
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        display: flex; 
+        align-items: center; 
+    }
 
-.info i {
-    color: #FFA954;
-    margin-right: 8px;
-    font-size: 1.2em;
-}
+    nav ul li{
+        float: left;
+        margin-left: 20px;
+    }
 
-/* Dropdown Menu */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+    .logo img {
+        display: block;
+        float: left;
+    }
 
-.dropbtn {
-    background-color: transparent;
-    color: #FFA954;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-weight: bold;
-}
+    .info {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        color: white;
+        font-size: 16px;
+        white-space: nowrap;
+    }
 
-.dropbtn:hover {
-    background-color: #00000054;
-}
+    .info i {
+        color: #FFA954;
+        margin-right: 8px;
+        font-size: 1.2em;
+    }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 4px;
-}
+    /* Dropdown Menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
-.dropdown-content a {
-    color: #FFA954;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
+    .dropbtn {
+        background-color: transparent;
+        color: #FFA954;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f17c;
-}
+    .dropbtn:hover {
+        background-color: #00000054;
+    }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .dropdown-content a {
+        color: #FFA954;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f17c;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 
 .hero{
     width: 1180px;
@@ -147,9 +152,10 @@ nav ul li{
     width: 983px;
     height: 370px;
     margin: 90px auto;
-    background-color: white;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+
 }
 
 .about h1{
@@ -158,6 +164,11 @@ nav ul li{
 
 .about img{
     margin-left: 131px;
+    width: 370px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-right: auto;
 }
 
 .conteudo-about h3 {
@@ -210,7 +221,7 @@ nav ul li{
     background-color: #2A282D;
     padding: 9px 0 90px;
     z-index: 0;
-    height: 800px;
+    min-height: 800px;
     
 }
 
@@ -244,6 +255,7 @@ nav ul li{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .service-item {
@@ -276,30 +288,21 @@ nav ul li{
     margin: 0 auto;
 }
 
-.mother-price{
+.price-menu {
     width: 1200px;
     height: 500px;
-    margin: 0 auto;
-    display: flex;
-    background-color: #2C2C2C;
-    z-index: 1;
-    position: relative;
-    top: -340px;
-}
-
-.price-menu {
-    width: 1140px;
-    height: 440px;
+    box-shadow: inset 0 0 0 30px #2C2C2C, /* Define o espaço interno */
+                inset 0 0 0 32px #FFA954; /* Cria a borda interna */
     margin: auto auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2C2C2C;
-    padding: 30px;
-    border: 2px solid #FFA954;
+    padding: 60px;
     box-sizing: border-box;
     position: relative;
     color: white;
+    top: -340px;
 }
 
 .price-menu-column {
@@ -392,7 +395,7 @@ nav ul li{
 
 .carousel {
     position: relative;
-    width: 1180px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -407,7 +410,7 @@ nav ul li{
     display: flex;
     transition: transform 0.3s ease-in-out;
     margin: 0 auto;
-    width: 97%;
+    width: 100%;
     
 }
 
@@ -420,7 +423,7 @@ nav ul li{
 }
 
 .mask{
-    width: 320px;
+    width: 100%;
     height: 320px;
     overflow: hidden; 
     position: relative;
@@ -455,19 +458,17 @@ nav ul li{
     background-color: #ff000000;
     border: none;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: bold;
 }
 
 .carousel-btn.prev {
-    left: -7px;
+    left: 0px;
     z-index: 5;
-    
 }
 
 .carousel-btn.next {
-    right: 17px;
-
+    right: 0;
 }
 
 .carousel-btn:hover {
@@ -480,19 +481,24 @@ nav ul li{
     height: 334px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-image:
         linear-gradient(to right, #2A282D, #2a282d1f),
         url(/img/schedule.jpg);
     background-size: cover; 
     background-position: center; 
+    padding: 0px 300px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .schedule p{
     font-weight: 100;
-    margin-left: 580px;
     font-size: 26px;
     color: white;
-    width: 263px;
+    width: 100%;
+    max-width: 500px; /* Garante que o texto não ultrapasse a largura */
+    margin: 0 auto 20px; /* Centraliza o texto */
 }
 
 .schedule button{
@@ -502,23 +508,25 @@ nav ul li{
     width: 270px;
     height: 58px;
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     border: none;
-    margin-left: 250px;
+    margin: 0 auto;
 }
 
 .barbers{
     background-color: #2C2C2C;
     width: 100%;
-    height: 795px;
+    height: 100%;
+    
 }
 
 .barbers .bg{
-    width: 1240px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 auto 30px auto;    
 }
 
 .barbers-header{
@@ -545,29 +553,47 @@ nav ul li{
 .barbers p{
     margin: 0 auto;
     color: white;
-    width: 679px;
+    width: 70%;
     font-weight: 400;
 }
 
 .barbers-photo{
-    margin: 30px 0 0 0;
+    width: 80%;
+    margin: 30px auto 0 auto;
     display: flex;
-    overflow: hidden;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
 }
 
 .barbers-item{
-    min-width: calc(100% / 3);
+
+    min-width: calc(70% / 3);
     text-align: center;
-    justify-items: center;
-    padding: 20px;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+}
+
+.barbers-item .mask{
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    overflow: hidden; 
+    position: relative;
+    text-align: center;
 }
 
 .barbers-item img{
     width: auto;
     height: 100%;
     position: absolute;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -580,14 +606,16 @@ nav ul li{
 
 .form-mother{
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
+    justify-content: center;
 }
 
 .form{
     margin: 60px auto 0;
-    width: 1170px;
-    height: 466px;
+    width: 80%;
+    max-width: 1170px; 
+    height: auto;
 }
 
 .form-header{
@@ -614,6 +642,7 @@ nav ul li{
 .form-content{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -630,7 +659,11 @@ nav ul li{
 }
 
 .form input{
-    margin-bottom: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .form button{
@@ -645,12 +678,12 @@ nav ul li{
     cursor: pointer; 
     display: flex;
     border: none;
-    margin: 0 auto;
+    margin: 0 auto 140px auto;
 }
 
 .contact-mother{
     width: 100%;
-    height: 680px;
+    height: auto; 
     background-color: #2A282D;
     z-index: 0;
     display: flex;
@@ -666,38 +699,26 @@ nav ul li{
     justify-content: center;
     align-items: flex-start;
     margin-top: -90px;
+    flex-wrap: wrap;
 }
 
 .contact {
     width: 400px;
     height: 368px;
     background-color: #1E1E1E;
+    box-shadow: inset 0 0 0 30px #1E1E1E, /* Define o espaço interno */
+                inset 0 0 0 32px #FFA954; /* Cria a borda interna */
+    margin-bottom: 20px;
 }
   
-.frame-contact {
-    margin: 30px;
-    height: 308px;
-    width: calc(100% - 60px);
-    border: 1px solid #FFA954;
-}
-
 .map {
     background-image: url(/img/map.png);
     width: 536px;
     height: 368px;
 }
 
-
-.logo-rodape {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-
-.logo-rodape img {
-    margin: 20px;
-    width: 201px;
-    height: 133px;
+.contact-list{
+    padding: 30px;
 }
 
 .contact-list ul{
@@ -715,8 +736,19 @@ nav ul li{
     
 }
 
+.logo-rodape {
+    width: 201px;
+    height: 133px;
+    display: flex;
+    margin: 15px auto;
+    background-image: url(/img/logo3.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
 .social{
-    padding-left: 18px;
+    padding: 0px 0px 5px 50px;
 }
 
 .social ul{
@@ -738,16 +770,23 @@ nav ul li{
 }
 
 .social-bigger {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+.social-bigger ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
 .social-bigger i{
     color:#FFA954;
-    height: 35px;
     font-size: 2.5em;
-    margin-right: 36px;
 }
 
 footer {
@@ -758,29 +797,474 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px; /* Empurra o rodapé para o final */
+    margin-top: 30px; 
   }
 
 /* ------------------------ Responsividade ----------------------------- */
-@media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap;
+/* Responsividade para a seção .conteudo-hero */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    box-sizing: border-box; /* Certifica-se de que o padding não quebra o layout */
+}
+
+.conteudo-hero {
+    text-align: left;
+    color: white;
+    width: 100%;
+    max-width: 1000px; /* Impede que o conteúdo se estique demais em telas grandes */
+}
+
+.conteudo-hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background-color: #FFA954;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #FF7A29;
+}
+
+/* Media Queries para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+
+
+    .conteudo-header {
+        width: 100%; /* Ajusta o tamanho do conteúdo para a largura total da tela */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px; /* Dá espaço entre a logo e o resto do conteúdo */
+    }
+
+    nav ul {
+        width: 100%; /* Faz com que os itens do menu ocupem toda a largura */
         justify-content: center;
-    }
-
-    .info {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .dropdown {
         margin-top: 10px;
     }
 
-    /* Centralizar o menu e limitar a largura a 2/3 da tela */
-    .dropdown-content {
-        width: 66.67%; /* 2/3 da largura */
-        left: 50%;
-        transform: translateX(-50%);
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .conteudo-hero h1 {
+        font-size: 28px; /* Ajusta o tamanho do título em telas menores */
+    }
+
+    .hero button {
+        padding: 10px 25px; /* Ajusta o tamanho do botão */
+    }
+
+    .about {
+        flex-direction: column; /* Empilha os itens em telas menores */
+        height: auto; /* Remove a altura fixa */
+        width: 100%;
+        
+
+    }
+
+    .about img {
+        width: 100%; /* A imagem vai ocupar 100% da largura disponível, sem ultrapassar o limite */
+        max-width: 370px; /* Mantém o tamanho da imagem */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-right: 0; /* Remove a margem direita */
+        margin-top: 20px; /* Espaço entre o conteúdo e a 
+        imagem */
+        margin-bottom: 20px;
+    }
+
+    .conteudo-about {
+        padding: 0px; /* Adiciona padding ao conteúdo para maior espaçamento */
+
+    }
+
+    .about h1 {
+        font-size: 28px; /* Ajusta o tamanho do título */
+    }
+
+    .conteudo-about h3 {
+        font-size: 24px; /* Ajusta o tamanho do subtítulo */
+    }
+
+    .conteudo-about p {
+        font-size: 14px; /* Ajusta o tamanho do texto */
+        line-height: 1.5; /* Melhora a legibilidade em telas pequenas */
+        width: 300px;
+    }
+
+    .conteudo-about img{
+        display: block;
+        width: 100%
+    }
+
+    .services {
+        width: 90%; /* Ajusta a largura da seção para 90% da tela */
+    }
+
+    .services-header h2 {
+        font-size: 22px; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    .services-menu {
+        flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%; /* Aumenta a largura dos itens para ocupar 100% da tela */
+        max-width: 300px; /* Limita a largura máxima de cada item */
+    }
+
+    .service-item img {
+        width: 150px; /* Reduz o tamanho da imagem em telas menores */
+    }
+
+    .service-item h3 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .service-item p {
+        font-size: 12px; /* Ajusta o tamanho da fonte do texto */
+    }
+
+    .schedule p {
+        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .schedule button {
+        font-size: 16px;
+        width: 200px; /* Ajusta o tamanho do botão */
+        height: 40px;
+    }
+
+    .barbers-header h2 {
+        font-size: 24px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .barbers p {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+        width: 85%; /* Aumenta a largura do parágrafo */
+    }
+
+    .barbers-item {
+        flex: 1 45%; /* Exibe dois itens por linha */
+    }
+
+    .form-header h2 {
+        font-size: 22px; /* Ajusta o tamanho da fonte */
+    }
+
+    .form label {
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    .form input {
+        font-size: 14px; /* Ajusta o tamanho da fonte do input */
+    }
+
+    .form-content {
+        gap: 15px; /* Reduz o espaçamento entre os campos */
+    }
+
+    .form-group {
+        flex: 1 1 48%; /* Exibe dois campos por linha */
+    }
+    .contact-content {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center;
+    }
+
+    .contact {
+        width: 90%; /* Ajusta a largura da caixa de contato */
+        max-width: 400px; /* Limita o tamanho máximo */
+        margin-bottom: 20px;
+    }
+
+    .map {
+        width: 90%; /* Ajusta o tamanho do mapa */
+        max-width: 536px;
+    }
+
+    .contact-list ul {
+        padding-left: 20px;
+    }
+
+    .contact-list ul li {
+        margin-bottom: 20px; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .social ul li {
+        margin-left: 15px; /* Reduz o espaçamento entre os ícones */
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    }
+
+    .container{
+    }
+
+    .conteudo-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;  /* Garante que a largura da navegação ocupe toda a largura disponível */
+        align-items: flex-start;
+    }
+
+    nav{
+        width: 100%;
+        position: relative;
+    }
+
+    nav ul {
+        display: flex;  /* Usando flex para alinhar os itens horizontalmente */
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;  /* Garante que cada item de navegação ocupe toda a largura */
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .dropdown {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    .dropbtn {
+        font-size: 1.5em;
+        padding: 12px 16px;
+        background-color: transparent;
+        color: #FFA954;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        right: 0;
+        min-width: 160px;
+        background-color: #1e1e1e;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .dropdown-content a {
+        color: #FFA954;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f17c;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 60px;  /* Ajusta o tamanho da logo para telas pequenas */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+.hero h1 {
+    font-size: 24px; /* Ajusta o tamanho do título em telas muito pequenas */
+}
+
+.hero button {
+    padding: 8px 20px; /* Ajusta o tamanho do botão */
+}
+
+.about h1 {
+    font-size: 24px; /* Ajusta ainda mais o tamanho do título */
+}
+
+.about{
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo-about h3 {
+    font-size: 20px; /* Ajusta o tamanho do subtítulo */
+}
+
+.conteudo-about p {
+    font-size: 12px; /* Ajusta o tamanho do texto */
+    width: 400px;
+}
+
+.conteudo-about img{
+    width: 50%;
+    display: block;
+}
+
+.mother-services{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.services-header h2 {
+    font-size: 20px; /* Reduz ainda mais o tamanho do título */
+}
+
+.service-item img {
+    width: 130px; /* Ajusta ainda mais o tamanho da imagem */
+}
+
+.service-item h3 {
+    font-size: 16px; /* Diminui o tamanho do título */
+}
+
+.service-item p {
+    font-size: 10px; /* Ajusta o tamanho da fonte do texto */
+}
+
+.photo{
+    display: none;
+}
+
+.price-menu{
+    display: none;
+}
+
+.schedule {
+    flex-direction: column; /* Coloca o conteúdo em coluna (texto acima e botão abaixo) */
+    height: auto; /* Ajusta a altura para não quebrar o layout */
+    padding: 20px; /* Adiciona padding para os elementos não ficarem colados */
+}
+
+.schedule p {
+    font-size: 18px; /* Diminui o tamanho da fonte do texto */
+    margin-bottom: 15px; /* Dá um espaçamento entre o texto e o botão */
+}
+
+.schedule button {
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    width: 80%; /* Ajusta o tamanho do botão */
+    height: 40px;
+}
+
+.barbers-header h2 {
+    font-size: 20px; /* Ajusta ainda mais o tamanho do título */
+}
+
+.barbers p {
+    font-size: 14px; /* Diminui o tamanho do texto */
+    width: 90%;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    /* Aumenta a largura do texto em telas muito pequenas */
+}
+
+.barbers-item {
+    flex: 1 80%; /* Exibe um item por linha */
+    max-width: 80%; /* Faz com que os itens ocupem toda a largura disponível */
+}
+
+.form-header h2 {
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+}
+
+.form label {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+}
+
+.form input {
+    font-size: 14px; /* Ajusta o tamanho da fonte do input */
+}
+
+.form-content {
+    flex-direction: column; /* Alinha os campos verticalmente */
+    gap: 10px; /* Reduz o espaçamento */
+}
+
+.form-group {
+    flex: 1 1 100%; /* Exibe um campo por linha */
+}
+
+.form button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    margin-bottom: 20px;
+}
+
+.contact-content {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contact {
+        width: 100%; /* Ajusta a largura para preencher a tela */
+        max-width: 400px; /* Limita a largura */
+    }
+
+    .map {
+        width: 100%; /* Ajusta a largura do mapa */
+        height: 250px; /* Reduz a altura para telas pequenas */
+    }
+
+    .social-bigger ul {
+        flex-direction: column; /* Organiza os ícones de redes sociais em coluna */
+        gap: 15px;
+    }
+
+    .social-bigger ul li {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 14px; /* Reduz o tamanho da fonte no rodapé */
+    }
+
 }
